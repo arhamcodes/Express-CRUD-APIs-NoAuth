@@ -61,7 +61,7 @@ app.put('/user/:id', async(req, res) => {
     }
  })
 
-mongoose.connect('mongodb+srv://admin-2:admin@rest-apis-expressjs.sixojzu.mongodb.net/Rest-APIs?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://<username>:<password>@rest-apis-expressjs.sixojzu.mongodb.net/Rest-APIs?retryWrites=true&w=majority')
 .then(()=>{
     app.listen(3000, ()=>{
         console.log('Server is running at port 3000')
